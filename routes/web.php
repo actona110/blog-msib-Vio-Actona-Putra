@@ -10,5 +10,7 @@ Route::resource('posts', PostController::class);
 Route::resource('categories', CategoryController::class);
 
 Route::get('/', function () {
-    return view('home');
+    return view('auth.login'); // Mengarahkan ke halaman login
 });
+
+Auth::routes();
